@@ -1,0 +1,23 @@
+body h1 {
+  font-family: "Roboto", sans-serif; }
+
+.row {
+  margin-bottom: 0;
+  position: relative; }
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%; }
+
+#header a:hover {
+  text-decoration: none;
+  color: inherit; }
+#header a {
+  color: #EE6E73; }
+
+.welcome {
+  background-color: #EE6E73;
+  height: 100vh; }
+
+/*# sourceMappingURL=style.css.map */
