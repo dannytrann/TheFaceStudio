@@ -1,23 +1,96 @@
 $main-font : 'Roboto', sans-serif
+$theme-color : #00BCD4
+$cool-grey: #F6F6F6
 
 body
+  position: relative
   h1
     font-family: $main-font
 .row
   margin-bottom: 0
   position: relative
-//              Footer
-footer
-  position: absolute
-  bottom: 0px
-  width: 100%
+a:hover, a:visited, a:link, a:active
+  text-decoration: none
 //              Header
 #header
+  position: fixed
+  width: 100%
+  z-index: 1000
+#inner-header
+  .brand-logo
+    margin-left: 20px
   a:hover
     text-decoration: none
-    color: inherit
+    color: darken(pink,20)
   a
-    color: #EE6E73
+    color: $theme-color
+
+//              Welcome
 .welcome
-  background-color: #EE6E73
-  height : 100vh
+  background-color: $theme-color
+  position: relative
+  height: 100vh
+  z-index: 9
+  i
+    text-align: center
+    color: white
+  i:hover
+    text-shadow: 0 0 20px white
+    -webkit-transition: all 500ms ease-out
+    -moz-transition: all 500ms ease-out
+    -o-transition: all 500ms ease-out
+    transition: all 500ms ease-out
+
+  #call-to-action
+    margin-top: 10vh
+  .card-content, .card-title
+    color : $theme-color
+
+#catch-phrase
+  margin-top: 30vh
+  a
+    color: $theme-color
+    margin-top: 10px
+    width: 200px
+  #inner-catch-phrase
+    p
+      font-size: 18px
+
+    h1
+      font-size: 48px
+      font-style: normal
+      font-weight: 100
+      letter-spacing: -3px
+
+
+
+//              About
+#about
+  padding-top: 50px
+  min-height: 100vh
+  position: relative
+  background-color: $cool-grey
+  z-index: 10
+  box-shadow: 0 -1px 20px rgba(0,0,0,.2)
+  .card-content
+    color: #757575
+    font-size: 1em
+  .card-title
+    color : $theme-color
+//              Services
+#services
+  height: 50vh
+//              Footer
+footer
+  position: relative
+  height: 150px
+  clear: both
+  width: 100%
+#page-footer1
+  background-color: $theme-color
+.footer-copyright
+  .container
+    color : $theme-color
+//RANDOMS
+.waves-effect.waves-pink .waves-ripple
+  background-color: $theme-color

@@ -1,23 +1,90 @@
-body h1 {
-  font-family: "Roboto", sans-serif; }
+body {
+  position: relative; }
+  body h1 {
+    font-family: "Roboto", sans-serif; }
 
 .row {
   margin-bottom: 0;
   position: relative; }
 
-footer {
-  position: absolute;
-  bottom: 0px;
-  width: 100%; }
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none; }
 
-#header a:hover {
+#header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000; }
+
+#inner-header .brand-logo {
+  margin-left: 20px; }
+#inner-header a:hover {
   text-decoration: none;
-  color: inherit; }
-#header a {
-  color: #EE6E73; }
+  color: #ff5a77; }
+#inner-header a {
+  color: #00BCD4; }
 
 .welcome {
-  background-color: #EE6E73;
-  height: 100vh; }
+  background-color: #00BCD4;
+  position: relative;
+  height: 100vh;
+  z-index: 9; }
+  .welcome i {
+    text-align: center;
+    color: white; }
+  .welcome i:hover {
+    text-shadow: 0 0 20px white;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out; }
+  .welcome #call-to-action {
+    margin-top: 10vh; }
+  .welcome .card-content, .welcome .card-title {
+    color: #00BCD4; }
+
+#catch-phrase {
+  margin-top: 30vh; }
+  #catch-phrase a {
+    color: #00BCD4;
+    margin-top: 10px;
+    width: 200px; }
+  #catch-phrase #inner-catch-phrase p {
+    font-size: 18px; }
+  #catch-phrase #inner-catch-phrase h1 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 100;
+    letter-spacing: -3px; }
+
+#about {
+  padding-top: 50px;
+  min-height: 100vh;
+  position: relative;
+  background-color: #F6F6F6;
+  z-index: 10;
+  box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.2); }
+  #about .card-content {
+    color: #757575;
+    font-size: 1em; }
+  #about .card-title {
+    color: #00BCD4; }
+
+#services {
+  height: 50vh; }
+
+footer {
+  position: relative;
+  height: 150px;
+  clear: both;
+  width: 100%; }
+
+#page-footer1 {
+  background-color: #00BCD4; }
+
+.footer-copyright .container {
+  color: #00BCD4; }
+
+.waves-effect.waves-pink .waves-ripple {
+  background-color: #00BCD4; }
 
 /*# sourceMappingURL=style.css.map */
