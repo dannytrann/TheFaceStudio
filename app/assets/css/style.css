@@ -38,12 +38,12 @@ a:hover, a:visited, a:link, a:active {
     -o-transition: all 500ms ease-out;
     transition: all 500ms ease-out; }
   .welcome #call-to-action {
-    margin-top: 10vh; }
+    margin-top: 1vh; }
   .welcome .card-content, .welcome .card-title {
     color: #00BCD4; }
 
 #catch-phrase {
-  margin-top: 30vh; }
+  margin-top: 25vh; }
   #catch-phrase a {
     color: #00BCD4;
     margin-top: 10px;
@@ -70,7 +70,33 @@ a:hover, a:visited, a:link, a:active {
     color: #00BCD4; }
 
 #services {
-  height: 50vh; }
+  min-height: 100vh; }
+  #services a, #services h1 {
+    color: #00BCD4; }
+  #services h1 {
+    font-weight: 200; }
+  #services a:hover {
+    color: pink; }
+  #services p {
+    color: #757575;
+    font-size: 1em; }
+  #services img {
+    height: 200px; }
+  #services h2 {
+    text-align: center;
+    color: #00BCD4;
+    font-weight: 100; }
+
+#service-img {
+  text-align: center; }
+
+#service-2 .card-content {
+  background-color: #00BCD4;
+  height: 150px; }
+
+#gallery {
+  min-height: 100vh;
+  position: relative; }
 
 footer {
   position: relative;

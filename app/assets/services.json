@@ -1,0 +1,121 @@
+[
+  {
+    "name": "Cosmetic Tatooing",
+    "description": "Also known as micro-pigmentation or permanent makeup, semi-permanent cosmetics is a procedure of implanting coloured pigment into the dermal layer of the skin to create lasting cosmetic effects. It can be used for camouflaging imperfections such as discoloration or scarring, or simply to escape the daily application required with traditional makeup routines by mimicking the appearance of real makeup.",
+    "tabNum": 1,
+    "options": [
+      {
+        "name": "Eyebrow: Blending or Feathering",
+        "id": 1,
+        "description": "Also known as the ‘hair-stroke technique’, ’3-D eyebrows’ or ‘eyebrow embroidery’, feathering is a method of simulating individual hairlines when tattooing the brows. Eyebrows that lack symmetry / definition, are too light / too thin, sparse, or non-existent, can be beautifully enhanced and improved with Semi-Permanent Cosmetics. Enhancement of eyebrows and restoring the appearance of hairs lost from over-plucking or illness is important because they frame your eyes and enhance the expression on your face (leaving you with an instant face lift and giving you a more youthful look).",
+        "images": [
+          "assets/img/eyebrow1B.jpg",
+          "assets/img/eyebrow1A.jpg"
+        ]
+      },
+      {
+        "name": "Eyeliner: Soft or Dramatic",
+        "id": 2,
+        "description": "Eyeliner enhances and defines the shape of the eyes. It makes lashes appear thicker when not wearing mascara or eyeliner. It is ideal for balancing and correcting wide or close set, deep or bulgy, small or large, as well as droopy eyes",
+        "images": [
+          "assets/img/eyebrow2B.jpg",
+          "assets/img/eyebrow2A.jpg"
+        ]
+      },
+      {
+        "name": "Lips: Liner or Full",
+        "id": 3,
+        "description": "Lip color is perfect for asymmetrical shaped lips, thick lips, thin lips, or lips with uneven vermillion borders. Enhancing the lips creates visual fullness and definition, and will also eliminate the problem of lipstick “bleeding” into the fine lines around the mouth.",
+        "images": [
+          "assets/img/lips1B.jpg",
+          "assets/img/lips1A.jpg"
+        ]
+      },
+      {
+        "name": "Beauty Mark: Create or Enhance",
+        "id": 4,
+        "description": "Creating a beauty mark whether from scratch or enhancing an existing freckle or mole is great for a subtle change.",
+        "images": [
+          "assets/img/beauty-mark1B.jpg",
+          "assets/img/beauty-mark1A.jpg"
+        ]
+      },
+      {
+        "name": "Corrections: Colour and Shape",
+        "id": 5,
+        "description": "For dated cosmetic tattoos that have changed in color, it can be corrected to the desired color with the careful combination and selection of specific pigments.  Shapes may also be adjusted at this time.",
+        "images": [
+          "assets/img/eyebrow3B.jpg",
+          "assets/img/eyebrow3A.jpg"
+        ]
+      },
+      {
+        "name": "Camouflage: Add and Bend",
+        "id": 6,
+        "description": "Pigment is added to the skin to blend and soften the color of a scar to match the surrounding tissue. This technique is also useful to correct loss of skin pigmentation, to minimize facelift scars, and to recreate nipple and areola areas after breast reconstruction surgery. In these instances, the pigments are custom blended to camouflage with the surrounding skin.",
+        "images": [
+          "assets/img/camo1B.jpg",
+          "assets/img/camo1BB.jpg",
+          "assets/img/camo1A.jpg"
+        ]
+      },
+      {
+        "name": "Removal: Existing cosmetic tatoos",
+        "id": 7,
+        "description": "This treatment is a non-surgical and non-laser form of cosmetic tattoo removal.  It is done via the Vasculyse treatment. Proven miraculous results for the removal of existing cosmetic tattoos received elsewhere in an average of 1-2 treatments (perfect for droopy / saggy eyeliner, as well as for changing the shape of incorrectly tattooed eyebrows).",
+        "images": [
+          "assets/img/eyebrow4B.jpg",
+          "assets/img/eyebrow4BB.jpg",
+          "assets/img/eyebrow4A.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Skin Revision",
+    "description": "The Face Studio also has special techniques in place to remove skin irregularities and naturally help rebuild beautiful skin.No longer will you have to “live with” unsightly and unpleasant skin conditions. Vasculyse will free you from these appearance-spoiling blemishes. You can move freely and confidently, without the self-consciousness that these can bring. You will look better…and feel better about yourself in only 1-2 treatments.",
+    "tabNum": 2,
+    "options": [
+      {
+        "name": "Brown, sun, and aging spots",
+        "id": 1,
+        "description": ""
+      },
+      {
+        "name": "Skin tags",
+        "id": 2,
+        "description": ""
+      },
+      {
+        "name": "Freckles",
+        "id": 3,
+        "description": ""
+      },
+      {
+        "name": "Ruby Points",
+        "id": 4,
+        "description": ""
+      },
+      {
+        "name": "Broken Capillaries",
+        "id": 5,
+        "description": ""
+      },
+      {
+        "name": "Spider Veins",
+        "id": 6,
+        "description": ""
+      },
+      {
+        "name": "White Heads",
+        "id": 7,
+        "description": ""
+      },
+      {
+        "name": "Cholesterol deposits",
+        "id": 8,
+        "description": ""
+      }
+    ]
+  }
+]

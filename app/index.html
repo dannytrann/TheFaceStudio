@@ -3,25 +3,45 @@
 <!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
-<head ng-include="'header-sheets.html'">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Face Studio | Permanent Makeup and Skin Revisions Inc.</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/materialize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--<link href='http://fonts.googleapis.com/css?family=Roboto:900,400italic,300,100italic,300italic,400' rel='stylesheet' type='text/css'>-->
+    <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
+
+
 <body>
 <div id="header" ng-include="'header.html'" class="z-depth-1"></div>
 <div ng-include="'welcome/welcome.html'" id="welcome" class="z-depth-2"></div>
 <div ng-include="'about/about.html'" class="z-depth-2" name="about" id="about"></div>
-<div ng-include="'services/services.html'" id="services" class="parallax-window" data-parallax="scroll" data-image-src="assets/img/facebg.jpg"></div>
+<div ng-include="'services/services.html'" id="services"></div>
+<div ng-include="'gallery/gallery.html'" id="gallery"></div>
 <div id="footer" ng-include="'footer.html'" name="footer" class="z-depth-1"></div>
+
+
 <!-- In production use:
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
 -->
+<script src="assets/js/jquery-2.1.3.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/myScripts.js"></script>
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
 <script src="bower_components/angular-aria/angular-aria.js"></script>
 <script src="bower_components/angular-animate/angular-animate.js"></script>
 <script src="bower_components/hammerjs/hammer.js"></script>
 <script src="bower_components/ngSmoothScroll/angular-smooth-scroll.js"></script>
-<script src="assets/js/jquery-1.11.2.js"></script>
-<script src="assets/js/bootstrap.js"></script>
 <script src="assets/js/app.js"></script>
 <script src="view1/view1.js"></script>
 <script src="view2/view2.js"></script>
@@ -30,5 +50,6 @@
 <script src="components/version/interpolate-filter.js"></script>
 <script src="assets/js/materialize.js"></script>
 <script src="assets/js/parallax.min.js"></script>
+
 </body>
 </html>

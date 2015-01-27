@@ -1,0 +1,74 @@
+<script>
+    $(document).ready(function(){
+        $('ul.tabs').tabs();
+    });
+    $(document).ready(function(){
+        $('.collapsible').collapsible({
+            accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+        });
+    });
+</script>
+
+<div class="row" ng-init="tab = 1" ng-controller="ServiceController as serviceCtrl">
+    <h1 class="card text-center">Our Services</h1>
+    <div class="col s12">
+        <ul class="tabs">
+            <li class="tab col s3" ng-class="{ active: tab == 1}"><a href ng-click="tab = 1">Cosmetic Tatooing</a></li>
+            <li class="tab col s3" ng-class="{ active: tab == 2}"><a href ng-click="tab = 2">Skin Revision</a></li>
+        </ul>
+        <div class="service" ng-if="tab == 1">
+            <div class="col s12">
+                <div class="col s10 offset-s1">
+                <h2>Cosmetic Tatooing</h2>
+                <p>{{serviceCtrl.getServiceDesc(0)}}</p>
+                    </div>
+            </div>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div ng-repeat="service in serviceCtrl.services[0].options" id="service-body">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a href="javascript:;" data-toggle="collapse" data-parent="#accordion" data-target="#{{service.id}}">
+                                    <i ng-if="active" class="mdi-navigation-expand-more small"></i>{{service.name}}
+                                </a>
+                            </h4>
+                        </div>
+                        <div ng-attr-id="{{service.id}}" class="panel-collapse collapse out">
+                            <div class="panel-body">
+                                <div class="col s4">
+                                <p>{{service.description}}</p>
+                                </div>
+                                <div class="col s8" id="service-img">
+                                    <h2>Before & After</h2>
+                                    <img ng-repeat="image in service.images" ng-src="{{image}}"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="service-2" ng-if="tab == 2">
+            <div class="col s4">
+                <h2>Skin Revision</h2>
+                <p>
+                    {{serviceCtrl.getServiceDesc(1)}}
+                </p>
+            </div>
+            <div class="row col s8">
+                <div class="col s4 m4" ng-repeat="service in serviceCtrl.services[1].options">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">{{service.name}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
