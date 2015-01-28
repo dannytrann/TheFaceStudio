@@ -79,42 +79,50 @@
       {
         "name": "Brown, sun, and aging spots",
         "id": 1,
-        "description": ""
+        "description": "",
+        "image": "assets/img/cosmetic-revisions/sunspots.jpg"
       },
       {
         "name": "Skin tags",
         "id": 2,
-        "description": ""
+        "description": "",
+        "image": "assets/img/cosmetic-revisions/skintag.jpeg"
       },
       {
         "name": "Freckles",
         "id": 3,
-        "description": ""
+        "description": "",
+        "image": "assets/img/cosmetic-revisions/freckles.jpeg"
       },
       {
         "name": "Ruby Points",
         "id": 4,
-        "description": ""
+        "description": "",
+        "image": "assets/img/cosmetic-revisions/ruby.jpg"
       },
       {
         "name": "Broken Capillaries",
         "id": 5,
-        "description": ""
+        "description": "",
+        "image": "assets/img/cosmetic-revisions/brokencap.jpg"
       },
       {
         "name": "Spider Veins",
         "id": 6,
-        "description": ""
+        "description": "",
+        "image": "assets/img/cosmetic-revisions/spiderveins.jpg"
       },
       {
         "name": "White Heads",
         "id": 7,
-        "description": ""
+        "description": "",
+        "image": "assets/img/cosmetic-revisions/whiteheads.jpg"
       },
       {
         "name": "Cholesterol deposits",
         "id": 8,
-        "description": ""
+        "description": "",
+        "image": "assets/img/cosmetic-revisions/chlordep.jpg"
       }
     ]
   }

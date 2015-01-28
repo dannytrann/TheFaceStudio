@@ -21,12 +21,12 @@
 </head>
 
 
-<body>
+<body ng-app="myApp">
 <div id="header" ng-include="'header.html'" class="z-depth-1"></div>
 <div ng-include="'welcome/welcome.html'" id="welcome" class="z-depth-2"></div>
 <div ng-include="'about/about.html'" class="z-depth-2" name="about" id="about"></div>
 <div ng-include="'services/services.html'" id="services"></div>
-<div ng-include="'gallery/gallery.html'" id="gallery"></div>
+<div ng-include="'gallery/gallery.html'" class="z-depth-2" id="gallery"></div>
 <div id="footer" ng-include="'footer.html'" name="footer" class="z-depth-1"></div>
 
 

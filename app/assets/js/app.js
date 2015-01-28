@@ -24,6 +24,7 @@ app.controller('ScrollController', ['$scope', '$location', '$anchorScroll',
     }]);
 app.controller('ServiceController',[ '$http',function ($http) {
     var services = this;
+    var icon= false;
     services.services = [];
     $http.get('assets/services.json').success(function(data){
         services.services = data;
@@ -32,12 +33,20 @@ app.controller('ServiceController',[ '$http',function ($http) {
 
     this.getServiceDesc = function(tab){
         if (tab == 1 )
-            return this.services[0].description
+            return this.services[0].description;
         else
-            return this.services[1].description
-
+            return this.services[1].description;
     }
 }]);
+app.directive('backImg', function(){
+    return function(scope, element, attrs){
+        var url = attrs.backImg;
+        element.css({
+            'background-image': 'url(' + url +')',
+            'background-size' : 'cover'
+        });
+    }
+});
 app.controller('GalleryController', ['$http', function(){
 
 }]);

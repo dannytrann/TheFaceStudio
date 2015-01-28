@@ -77,6 +77,8 @@ a:hover, a:visited, a:link, a:active {
     font-weight: 200; }
   #services a:hover {
     color: pink; }
+    #services a:hover i {
+      color: pink; }
   #services p {
     color: #757575;
     font-size: 1em; }
@@ -86,12 +88,14 @@ a:hover, a:visited, a:link, a:active {
     text-align: center;
     color: #00BCD4;
     font-weight: 100; }
+  #services .main-tabs .indicator {
+    width: 564px; }
 
 #service-img {
   text-align: center; }
 
 #service-2 .card-content {
-  background-color: #00BCD4;
+  background-color: rgba(0, 0, 0, 0.2);
   height: 150px; }
 
 #gallery {
