@@ -7,10 +7,25 @@ var app = angular.module('myApp', [
     'myApp.view2',
     'myApp.version',
     'smoothScroll'
-]).
-    config(['$routeProvider', function ($routeProvider) {
-        $routeProvider.otherwise({redirectTo: '/view1'});
+]);
+app.config(['$routeProvider',
+    function($routeProvider) {
+        $routeProvider.
+            when('/', {
+                templateUrl: 'section1.html',
+                controller: 'MainController'
+            }).
+            when('/about', {
+                templateUrl: 'section1.html',
+                controller: 'MainController'
+            }).
+            when('/testimonials', {
+                templateUrl: 'testimonials/testimonials.html',
+                controller: 'TestimonialController'
+            });
     }]);
+app.controller('MainController', function($scope){
+});
 app.controller('ScrollController', ['$scope', '$location', '$anchorScroll',
     function ($scope, $location, $anchorScroll) {
         $scope.gotoBottom = function () {
@@ -38,6 +53,10 @@ app.controller('ServiceController',[ '$http',function ($http) {
             return this.services[1].description;
     }
 }]);
+app.controller('TestimonialController', function(){
+});
+
+
 app.directive('backImg', function(){
     return function(scope, element, attrs){
         var url = attrs.backImg;
