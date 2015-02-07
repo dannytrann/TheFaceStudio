@@ -89,7 +89,7 @@ a:hover, a:visited, a:link, a:active {
     color: #00BCD4;
     font-weight: 100; }
   #services .main-tabs .indicator {
-    width: 564px; }
+    width: 50%; }
 
 #service-img {
   text-align: center; }
@@ -104,6 +104,34 @@ a:hover, a:visited, a:link, a:active {
 
 #testimonials {
   min-height: 100vh; }
+  #testimonials #inner-testimonials h1 {
+    font-weight: 200;
+    color: #00BCD4; }
+
+#inner-contacts {
+  min-height: 100vh; }
+  #inner-contacts h1 {
+    font-weight: 200;
+    color: #00BCD4; }
+  #inner-contacts #contact-right h1 {
+    font-size: 25px;
+    font-weight: 300;
+    color: #00BCD4; }
+  #inner-contacts #contact-right a {
+    color: #00BCD4;
+    padding-top: 5px; }
+  #inner-contacts #contact-left h1 {
+    font-size: 25px;
+    font-weight: 300;
+    color: #00BCD4; }
+  #inner-contacts #contact-left p {
+    font-size: 15px;
+    font-weight: 200;
+    color: #464646; }
+  #inner-contacts #contact-footer p {
+    font-size: 20px;
+    font-weight: 200;
+    color: #00BCD4; }
 
 footer {
   position: relative;

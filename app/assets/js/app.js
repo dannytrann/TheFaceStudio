@@ -14,14 +14,6 @@ app.config(['$routeProvider',
             when('/', {
                 templateUrl: 'section1.html',
                 controller: 'MainController'
-            }).
-            when('/about', {
-                templateUrl: 'section1.html',
-                controller: 'MainController'
-            }).
-            when('/testimonials', {
-                templateUrl: 'testimonials/testimonials.html',
-                controller: 'TestimonialController'
             });
     }]);
 app.controller('MainController', function($scope){
@@ -56,7 +48,11 @@ app.controller('ServiceController',[ '$http',function ($http) {
 app.controller('TestimonialController', function(){
 });
 
-
+app.controller('ContactController', function(){
+    this.submit = function(email){
+        console.log(email.firstname);
+    };
+})
 app.directive('backImg', function(){
     return function(scope, element, attrs){
         var url = attrs.backImg;

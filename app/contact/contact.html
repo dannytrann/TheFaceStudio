@@ -1,0 +1,78 @@
+<script>
+    $(document).ready(function() {
+        $('select').material_select();
+    });
+</script>
+<div id="inner-contacts" ng-controller="ContactController as contactCtrl">
+    <section class="text-center">
+        <h1>Contact Info</h1>
+    </section>
+    <div class="row">
+        <div id="contact-left" class="col s6 text-center">
+            <div class="row">
+                <h1>Office Hours</h1>
+                <p>Weekdays 9am – 4:30pm</p>
+
+                <h1>Address</h1>
+                <p>10312 164A St    (Fraser Heights)
+                    Surrey, BC
+                    V4n 5m4
+                </p>
+
+                <h1>Contact Info</h1>
+                <p>Office  604.496.BROW (2769)</p>
+                <p>Cell  778.238.2826</p>
+
+                <p>info@thefacestudio.ca</p>
+                <p>www.thefacestudio.ca</p>
+            </div>
+        </div>
+        <div id="contact-right" class="col s6">
+            <div class="row text-center">
+                <h1>Leave a message</h1>
+            </div>
+            <form class="col s12" ng-submit="contactCtrl.submit(email)">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="first_name" type="text" ng-model="email.firstname" name="fname" class="validate">
+                        <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text"  ng-model="email.lastname" name="lname" class="validate">
+                        <label for="last_name">Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email"  ng-model="email.email" name="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="username" type="text"  ng-model="email.subject" name="subject" class="validate">
+                        <label for="username">Subject</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea class="materialize-textarea" ng-model="email.message" name="message"></textarea>
+                        <label>Your Message</label>
+                    </div>
+                </div>
+                <div class="row pull-right">
+                    <button class="btn waves-effect waves-teal" type="submit" name="action">Submit
+                        <i class="mdi-content-send right"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row text-center" id="contact-footer">
+        <div class="col s8 offset-s2">
+            <p>Contact us for a Free consultation!
+                A credit card is required for booking appointments. Without 24 hour notice, cancellations or no-shows will be subject to 50% of the service fee.
+            </p>
+        </div>
+    </div>
+</div>
