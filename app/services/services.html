@@ -52,14 +52,14 @@
 
         </div>
         <div id="service-2" ng-if="tab == 2">
-            <div class="col s4">
+            <div class="col s12 m4">
                 <h2>Skin Revision</h2>
                 <p>
                     {{serviceCtrl.getServiceDesc(1)}}
                 </p>
             </div>
-            <div class="row col s8">
-                <div class="col s4 m4" ng-repeat="service in serviceCtrl.services[1].options">
+            <div class="row col s12 m8">
+                <div class="col s12 m4" ng-repeat="service in serviceCtrl.services[1].options">
                     <div class="card" back-img="{{service.image}}">
                         <div class="card-content text-center">
                             <span class="card-title" id="service-card">{{service.name}}</span>
