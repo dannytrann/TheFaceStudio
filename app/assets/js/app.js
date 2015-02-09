@@ -45,8 +45,31 @@ app.controller('ServiceController',[ '$http',function ($http) {
             return this.services[1].description;
     }
 }]);
-app.controller('TestimonialController', function(){
-});
+var testTicket = {
+    name : "",
+    body : "",
+    location : ""
+};
+app.controller('TestimonialController', ['$http',function($http){
+    $(document).ready(function(){
+        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+        $('.modal-trigger').leanModal();
+    });
+    var testimonials = this;
+    testimonials.testimonials = [];
+    $http.get('assets/comments.json').success(function(data){
+        testimonials.testimonials = data;
+        console.log(data);
+    });
+    this.testimonials = testimonials.testimonials;
+    this.openModal = function(id){
+        console.log(id);
+        $(document).ready(function(){
+            $(id).openModal();
+        });
+    };
+
+}]);
 
 app.controller('ContactController', function(){
     this.submit = function(email){

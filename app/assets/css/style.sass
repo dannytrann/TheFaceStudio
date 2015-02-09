@@ -57,12 +57,19 @@ a:hover, a:visited, a:link, a:active
       font-size: 18px
 
     h1
-      font-size: 48px
+      font-size: 80px
       font-style: normal
       font-weight: 100
       letter-spacing: -3px
-
-
+@media (max-width: 500px)
+  #catch-phrase
+    #inner-catch-phrase
+      p
+        font-size: 15px
+      h1
+        font-size: 60px
+  #catch-phrase
+    margin-top: 60px
 
 //              About
 #about
@@ -100,6 +107,12 @@ a:hover, a:visited, a:link, a:active
   .main-tabs
     .indicator
       width: 50%
+  @media (max-width: 500px)
+    h1
+      font-size: 40px
+    .tabs
+      a
+        font-size: 11px
 #service-img
   text-align: center
 #service-2
@@ -109,14 +122,45 @@ a:hover, a:visited, a:link, a:active
 //              Gallery
 #gallery
   min-height: 100vh
-  position: relative
+  h1
+    font-weight: 100
+    color: $theme-color
 //              Testimonials
 #testimonials
   min-height: 100vh
+  background-color: $theme-color
   #inner-testimonials
     h1
       font-weight: 200
+      color: white
+    #instructions
+      p
+        color: #ffffff
+        font-weight: 100
+        font-size: 25px
+    .btn
+      background-color: white
+      color: #37474f
+      height: 70px
+      font-size: 25px
+      font-weight: 100
+    h5
+      color: #37474f
+      font-size: 10px
+      position: relative
+      top: -20px
+    #testLocation
       color: $theme-color
+      font-size: 20px
+  @media (max-width: 500px)
+    h1
+      font-size: 40px
+    #inner-testimonials
+      .btn
+        font-size: 18px
+      h5
+        font-size: 8px
+
 //              Contacts
 #inner-contacts
   min-height: 100vh
@@ -145,7 +189,16 @@ a:hover, a:visited, a:link, a:active
       font-size: 20px
       font-weight: 200
       color: $theme-color
-
+@media (max-width: 500px)
+  #inner-contacts
+    h1
+      font-size: 40px
+    #contact-right
+      h1
+        font-size: 25px
+    #contact-footer
+      p
+        font-size: 15px
 //              Footer
 footer
   position: relative
@@ -154,6 +207,8 @@ footer
   width: 100%
 #page-footer1
   background-color: $theme-color
+  li
+    list-style-type: none
 .footer-copyright
   .container
     color : $theme-color

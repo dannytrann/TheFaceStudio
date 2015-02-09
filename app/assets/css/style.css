@@ -51,11 +51,19 @@ a:hover, a:visited, a:link, a:active {
   #catch-phrase #inner-catch-phrase p {
     font-size: 18px; }
   #catch-phrase #inner-catch-phrase h1 {
-    font-size: 48px;
+    font-size: 80px;
     font-style: normal;
     font-weight: 100;
     letter-spacing: -3px; }
 
+@media (max-width: 500px) {
+  #catch-phrase #inner-catch-phrase p {
+    font-size: 15px; }
+  #catch-phrase #inner-catch-phrase h1 {
+    font-size: 60px; }
+
+  #catch-phrase {
+    margin-top: 60px; } }
 #about {
   padding-top: 50px;
   min-height: 100vh;
@@ -90,6 +98,11 @@ a:hover, a:visited, a:link, a:active {
     font-weight: 100; }
   #services .main-tabs .indicator {
     width: 50%; }
+  @media (max-width: 500px) {
+    #services h1 {
+      font-size: 40px; }
+    #services .tabs a {
+      font-size: 11px; } }
 
 #service-img {
   text-align: center; }
@@ -99,14 +112,42 @@ a:hover, a:visited, a:link, a:active {
   height: 150px; }
 
 #gallery {
-  min-height: 100vh;
-  position: relative; }
+  min-height: 100vh; }
+  #gallery h1 {
+    font-weight: 100;
+    color: #00BCD4; }
 
 #testimonials {
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-color: #00BCD4; }
   #testimonials #inner-testimonials h1 {
     font-weight: 200;
-    color: #00BCD4; }
+    color: white; }
+  #testimonials #inner-testimonials #instructions p {
+    color: #ffffff;
+    font-weight: 100;
+    font-size: 25px; }
+  #testimonials #inner-testimonials .btn {
+    background-color: white;
+    color: #37474f;
+    height: 70px;
+    font-size: 25px;
+    font-weight: 100; }
+  #testimonials #inner-testimonials h5 {
+    color: #37474f;
+    font-size: 10px;
+    position: relative;
+    top: -20px; }
+  #testimonials #inner-testimonials #testLocation {
+    color: #00BCD4;
+    font-size: 20px; }
+  @media (max-width: 500px) {
+    #testimonials h1 {
+      font-size: 40px; }
+    #testimonials #inner-testimonials .btn {
+      font-size: 18px; }
+    #testimonials #inner-testimonials h5 {
+      font-size: 8px; } }
 
 #inner-contacts {
   min-height: 100vh; }
@@ -133,6 +174,13 @@ a:hover, a:visited, a:link, a:active {
     font-weight: 200;
     color: #00BCD4; }
 
+@media (max-width: 500px) {
+  #inner-contacts h1 {
+    font-size: 40px; }
+  #inner-contacts #contact-right h1 {
+    font-size: 25px; }
+  #inner-contacts #contact-footer p {
+    font-size: 15px; } }
 footer {
   position: relative;
   height: 150px;
@@ -141,6 +189,8 @@ footer {
 
 #page-footer1 {
   background-color: #00BCD4; }
+  #page-footer1 li {
+    list-style-type: none; }
 
 .footer-copyright .container {
   color: #00BCD4; }

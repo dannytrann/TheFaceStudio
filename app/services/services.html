@@ -18,7 +18,7 @@
         </ul>
         <div class="service" ng-if="tab == 1">
             <div class="col s12">
-                <div class="col s10 offset-s1">
+                <div class="col s12 m10 offset-m1">
                     <h2>Cosmetic Tatooing</h2>
                     <p>{{serviceCtrl.getServiceDesc(0)}}</p>
                 </div>
@@ -37,10 +37,10 @@
                         </div>
                         <div ng-attr-id="{{service.id}}" class="panel-collapse collapse out">
                             <div class="panel-body">
-                                <div class="col s4">
+                                <div class="col s12 m4">
                                     <p>{{service.description}}</p>
                                 </div>
-                                <div class="col s8" id="service-img">
+                                <div class="col s12 m8" id="service-img">
                                     <h2>Before & After</h2>
                                     <img ng-repeat="image in service.images" ng-src="{{image}}"/>
                                 </div>
